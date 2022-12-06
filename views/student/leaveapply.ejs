@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <% include ../partial/sideNav.ejs %>
+        <section id="content">
+            <div id="header">
+                <div class="nav">
+                    <div class="profile">
+                        <img style="border-radius: 50%;" src=<%=userProfile %> height="30px" width="30px" style
+                        referrerpolicy="no-referrer" />
+                    </div>
+                </div>
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div class="content">
+                <div class="content-header">
+                    <p class="welcome">Welome <strong>
+                            <%=user%>
+                        </strong></p>
+                </div>
+                <div class="container">
+                    <form>
+                        <Center>
+                            <h2 style="font-weight:600;">Leave Apply</h2>
+                        </Center>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputPassword4">From Date</label>
+                                <input type="date" class="form-control" id="fromdate"><br>
+                                <label for="inputAddress">From Time</label>
+                                <input type="time" class="form-control" id="fromtime">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">To Date</label>
+                            <input type="date" class="form-control" id="todate" <br>
+                            <label for="inputCity">To Time</label>
+                            <input type="time" class="form-control" id="totime">
+                            <br>
+                            <label for="inputEmail4">Reason</label>
+                            <textarea class="form-control" style="resize:none" id="reason" cols="30"
+                                rows="3"></textarea>
+                        </div>
+                        <center>
+                            <button class="btn btn-primary" id="submit">Submit</button>
+                        </center>
+                    </form>
+
+                </div>
+
+        </section>
+        <script src="/leave.js"></script>
+</body>
+
+</html>
